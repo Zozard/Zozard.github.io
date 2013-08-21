@@ -1,16 +1,268 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[My Octopress Blog]]></title>
+  <title><![CDATA[A work experience @ Blackbird]]></title>
   <link href="http://Zozard.github.io/atom.xml" rel="self"/>
   <link href="http://Zozard.github.io/"/>
-  <updated>2013-08-20T17:10:49+02:00</updated>
+  <updated>2013-08-21T12:30:34+02:00</updated>
   <id>http://Zozard.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Zoz]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[my project's mvp]]></title>
+    <link href="http://Zozard.github.io/blog/2013/08/21/my-projects-mvp/"/>
+    <updated>2013-08-21T11:59:00+02:00</updated>
+    <id>http://Zozard.github.io/blog/2013/08/21/my-projects-mvp</id>
+    <content type="html"><![CDATA[<p>Ce projet a pour but de développer un application offrant une interface collaborative de création de Business Model Canvas à ses utilisateurs. Pour pouvoir accéder à cette application, il faudra disposer d&#8217;un compte utilisateur ou bien en créer un nouveau. Afin d&#8217;offrir un service complet, il sera composé de trois parties bien distinctes permettant d&#8217;élaborer le document avec le plus de confort possible.</p>
+
+<h2>Le Canvas, le coeur de l&#8217;application.</h2>
+
+<p>Cette partie représentera un Business Model Canvas composé des 9 blocs décrits précedémment. Il sera affiché au centre de l&#8217;interface. Chaque utilisateur pourra à tout moment accéder au bloc de son choix en cliquant dessus afin d&#8217;écrire à l&#8217;intérieur. Il sera invité à écrire un court message reflètant une idée relative à la fonction de ce bloc. Lorsque l&#8217;utilisateur aura terminé son message, il devra cliquer en dehors du canvas afin que son message soit sauvegardé à l&#8217;intérieur de celui-ci.</p>
+
+<p>Le Business Model Canvas constituera le document final produit par les utilisateurs.</p>
+
+<h2>La Shoutbox, pour la réflexion.</h2>
+
+<p>En périphérie du canvas sera présente une shoutbox (un cadre accueillant une messagerie instantanée). Les différents utilisateurs participant à l&#8217;élaboration de ce canvas pourront discuter entre eux afin d&#8217;organiser une réflexion sur les idées à inscrire à l&#8217;intérieur.</p>
+
+<p>Cet espace constituera l&#8217;outil idéal pour organiser le brainstorming relatif à l&#8217;élaboration d&#8217;un document tel que le Business Model Canvas.</p>
+
+<h2>Le Tweet-Basket, les idées à la volée</h2>
+
+<p>En périphérie du canvas sera également présent un cadre comportant les tweets des comptes des utilisateurs associés à l&#8217;application. Détenir un compte Twitter pour s&#8217;inscrire à l&#8217;application sera cependant optionnel et ne sera pas indispensable pour créer un compte utilisateur sur l&#8217;application. Les tweets recueillis seront filtrés selon un hashtag (&ldquo;mot dièse&rdquo;) spécial défini par les utilisateurs. Il sera possible de &ldquo;drag &amp; dropper&rdquo; les tweets afin de les insérer dans une case souhaitée du canvas.</p>
+
+<p>Cette fonctionnalité offre un certain confort dans la participation des utilisateurs. Ceux-cis pourront en effet envoyer de courts messages de façon aisée et rapide avec leur smartphone par exemple.</p>
+
+<p></div></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Outils utilisés]]></title>
+    <link href="http://Zozard.github.io/blog/2013/08/20/outils-utilises/"/>
+    <updated>2013-08-20T17:35:00+02:00</updated>
+    <id>http://Zozard.github.io/blog/2013/08/20/outils-utilises</id>
+    <content type="html"><![CDATA[<p>Test-Driven Development (TDD) est une méthode dite &ldquo;agile&rdquo; qui consiste à écrire les test avant le code. Des tests sont écrits puis ensuite on écrit juste assez de code pour satisfaire ces test (pas plus).</p>
+
+<p>Utiliser du TDD est un moyen de fixer le besoin et les objectifs du code. Il peut être vu comme une extention du cahier des charges, afin de ne pas s&#8217;éloigner du but précis du développement. C&#8217;est une technique de programmation qui produit du code propre et assurément fonctionnel.</p>
+
+<p>Les étapes du Test-Driven Development sont les suivantes :</p>
+
+<p style="text-align:center;"><img src="http://www.sapdecouverte.fr/wp-content/uploads/2013/06/fig3.bmp" title="Etapes du TDD" alt="" /></p>
+
+<ul>
+<li>On ajoute un test qui correspond aux spécifications.</li>
+<li>Lorsque ce test est exécuté, il échoue puisqu&#8217;il n&#8217;y a pas de code.</li>
+<li>On ajoute le code en question.</li>
+<li>Le test fonctionne.</li>
+<li>On remanie le code pour le rendre plus propre, plus clair.</li>
+<li>On vérifie que le test fonctionne toujours.</li>
+</ul>
+
+
+<p>Chaque fois que le code doit changer, les tests devront donc être adaptés en conséquence. TDD est ce qu&#8217;on appelle une méthode de développement agile*.</p>
+
+<h2>Rspec</h2>
+
+<p>L&#8217;outil permettant d&#8217;écrire les spécifications utilisé avec le langage Ruby est Rspec. Voici un example de code Rspec :</p>
+
+<p style="text-align:center;"><img src="http://zozine.iiens.net/rspec.png" title="Extrait de code RSpec" alt="" /></p>
+
+<p>Le mot-clé &ldquo;MovieList&rdquo;, en vert désigne la classe à décrire. On indique que l&#8217;on va décrire le comportement de cette classe.</p>
+
+<p>Le texte écrit en rouge est indicatif. Il est écrit par le programmeur et a pour but d&#8217;expliquer littéralement le comportement du module qu&#8217;on décrit.</p>
+
+<p>Les lignes 4 et 5 correspondent à du code Ruby. C&#8217;est le comportement qu&#8217;est censé adopter notre module. Ici, on souhaite simplement que l&#8217;objet &ldquo;MovieList&rdquo; soit vide lorsqu&#8217;il est créé.</p>
+
+<h1>Ruby on Rails</h1>
+
+<h2>Ruby</h2>
+
+<p>Ruby est un langage de scripts orienté objet. On dit que Ruby est fortement orienté objet car toute donnée est un objet, toute fonction est une méthode d&#8217;un objet et toute variable fait référence à un objet. (Ainsi, la chaine de caractère &ldquo;Bonjour&rdquo; est un objet qui a des méthodes comme downcase. &ldquo;Bonjour&rdquo;.downcase renvoit l&#8217;objet &ldquo;BONJOUR&rdquo;)</p>
+
+<p style="text-align:center;"><img src="http://zozine.iiens.net/ruby.png" title="bonjour" alt="" /></p>
+
+<p>Ruby essaie d&#8217;offrir le plus de flexibilité et d&#8217;aisance d&#8217;utilisation pour le programmeur. Certains aspects du langage peuvent être modifiées durant son execution : si le programmeur le souhaite, il peut modifier ou réécrire complètement une méthode. De plus, la syntaxe et l&#8217;appellation des méthodes ont été pensées de façon à créer un langage clair et simple à lire, se rapprochant de l&#8217;anglais au maximum.</p>
+
+<h2>Rails</h2>
+
+<p>Rails est un framework* web écrit en Ruby. Rails suit la convention MVC* : Modèle-Vue-Contrôleur. Une structure de fichier (qu&#8217;on appelle un namespacing) est imposée au programmeur pour que son travail puisse se dérouler correctement.</p>
+
+<p>La particularité de Rails réside dans deux règles fondamentales :</p>
+
+<p><strong>DRY : Don&rsquo;t Repeat Yourself.</strong></p>
+
+<p>Un morceau de code écrit à un endroit et ayant une fonctionnalité bien précise ne doit pas être réécrit autre part. Il faut réduire au maximum la redonddance du code. Cela a pour but d&#8217;améliorer la clareté et la simplicité du code. Le découpage du code en MVC permet d&#8217;appliquer ce principe dans de bonnes conditions.</p>
+
+<p><strong>Convention over Configuration.</strong></p>
+
+<p>Rails propose de nombreux comportements par défaut lors de la création de certaines entités. Si ces conventions de nommage sont connues par le programmeur, cela offre de nombreux outils qui permettent de gagner du temps et de l&#8217;aisance de la programmation.</p>
+
+<p>L&#8217;exemple le plus simple est celui des modèles. Si un modèle &ldquo;Jeu&rdquo; est créé, une table &ldquo;jeux&rdquo; sera automatiquement créée dans la base de donnée et un ensemble de fonctions pré-définies permettra au modèle d&#8217;interagir avec la table de la base de données. (le pluriel de plusieurs langues est géré par Rails). Le programmeur peut choisir d&#8217;utiliser ces conventions ou bien de redéfinir la base de données.</p>
+
+<h2>Glossaire</h2>
+
+<p><strong>Test Unitaire:</strong></p>
+
+<p>Un test unitaire a pour but de vérifier le bon fonctionnement d&#8217;une partie du programme (qui peut être appelée &ldquo;unité&rdquo;). Les tests se basent généralement sur la vérification de l&#8217;état de certaines variables ou bien de ce qui s&#8217;affiche sur la sortie. On vérifie que cela correspond bien aux attentes données par la spécification.</p>
+
+<p><strong>Framework :</strong>
+Un framework peut être vu comme une boîte à outils. C&#8217;est un ensemble de composants qui permettent de créer les grandes lignes d&#8217;un programme.</p>
+
+<p><strong>MVC:</strong>
+C&#8217;est une convention d&#8217;organisation des différentes parties d&#8217;un programme interactif lors de son développement. On distingue trois couches nettement séparées :
+&ndash; Le Modèle :  La façon dont les données sont représentées et mémorisées.
+&ndash; La Vue : L&#8217;interface destinées à l&#8217;utilisateur final du programme
+&ndash; Le Contrôleur : Il prend en charge les évènements reçus sur la vue et répercute les effets attendus sur le modèle.</p>
+
+<p><strong>Méthodologie agile:</strong>
+C&#8217;est un ensemble de méthodes de gestion de projets (le plus souvent informatiques). Elles fonctionnent sur la base de l&#8217;incrémental (on s&#8217;occupe de différentes tâches une par une, par ordre de priorité) et de l&#8217;itératif (le projet est vu dans son intégralité et chaque itération apporte ses améliorations). De nombreuses phases de contrôle et d&#8217;échanges avec le client vont ponctuer le développement du projet.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[An introduction to business model canvas]]></title>
+    <link href="http://Zozard.github.io/blog/2013/08/20/an-introduction-to-business-model-canvas/"/>
+    <updated>2013-08-20T17:31:00+02:00</updated>
+    <id>http://Zozard.github.io/blog/2013/08/20/an-introduction-to-business-model-canvas</id>
+    <content type="html"><![CDATA[<p>  A business model describes the process, for an organization, of how it creates, delivers and captures value.</p>
+
+<p>  In order to formalize those models into an intuitive and clear form, Business Canvas have been created. A Business Canva is a schematic representation (of a Business Model) composed in 9 &ldquo;building blocks&rdquo;. Each block should be properly determined to have the full description of the organization.</p>
+
+<p>  <img src="http://zozine.iiens.net/BMC.jpeg" title="Business Model Canvas Representation" alt="" /></p>
+
+<h2>Customer Segments (CS)</h2>
+
+<p>This is the (group of) people for whom value is created. People belonging to the same Customer Segment share the same needs towards the value of the organization. Different types of customer segments are</p>
+
+<ul>
+<li><p>Mass market (Large audience, no distinction between different CS).</p></li>
+<li><p>Niche market (CS have specific needs. Customized products for example).</p></li>
+<li><p>Segmented (Value offer differs depending CS&rsquo;s specifications. Wealth is a common criteria).</p></li>
+<li><p>Diversified (Totally different CS are targetted with diversified offers).</p></li>
+<li><p>Multi-sided platforms (Two or more interdependent CS are served. Credit Cards are the best example).</p></li>
+</ul>
+
+
+<h2>Value Proposition (VP)</h2>
+
+<p>This is the set of products/services offered by the organization. Its purpose is to solve a customer&rsquo;s issue. We can distinguish different methods to create value :</p>
+
+<ul>
+<li><p>Newness : Creating a VP that satisfy new needs. Often technology related. (ex : appearance of cellphones).</p></li>
+<li><p>Performance : Substantially improving a product performance permits to improve its value.</p></li>
+<li><p>Customization : Making each product customizable for each client makes this product more attractive.</p></li>
+<li><p>&ldquo;Getting the job done&rdquo; : performing a service CS don&rsquo;t want to do or cannot do.</p></li>
+<li><p>Design : This is a factor highly regarded by customers so this is not to disregard.</p></li>
+<li><p>Brand : Using certain brands allows people to show they belong to a certain class.</p></li>
+<li><p>Prices / Cost reduction : Reducing the money CS are going to spend.</p></li>
+<li><p>Risk reduction : Insurances make the customer feel safer about the product he bought.</p></li>
+<li><p>Accessibility : make a product available to CS who lacked access to it.</p></li>
+<li><p>Convenience : improving convenience of existing products.</p></li>
+</ul>
+
+
+<h2>Channels (CH)</h2>
+
+<p>This is the interface between the customers and the organization. Its purpose is to lure clients, allow them to purchase, deliver the product and keep contact with the client after sale. Five phases can be identified :</p>
+
+<ul>
+<li><p>Awareness : means to let the client be aware of the company&rsquo;s offer. (eg street advertisement)</p></li>
+<li><p>Evaluation : means to allow the client tu evaluate the VP (eg satisfaction surveys)</p></li>
+<li><p>Purchase : means the client have to purchase products (website, own stores, partner stores)</p></li>
+<li><p>Delivery : means to deliver the product to the client (home delivery, stores)</p></li>
+<li><p>After sale :  means to stay in contact with the client to offer him support (website, hotline)</p></li>
+</ul>
+
+
+<h2>Customer Relationships (CR)</h2>
+
+<p>This block describes the relationships the company wants to maintain with customers. Some offers require the company be available to the client during the whole period he is enjoying the offer. Most common types of relationships are :</p>
+
+<ul>
+<li><p>Personnal Assistance : This is human contact. A customer representative helps the customer during or after the purchase.</p></li>
+<li><p>Dedicated personnal assistance : Clients all have one unique employee taking care of their queries. It represents a relationship relatively intimate. (e.g. bank advisors)</p></li>
+<li><p>Self-service : Customers receives some means to help themselves. (e.g. product manual) No further contact is supposed to happen with the company.</p></li>
+<li><p>Automated Service : Customers can access to an automated platform providing them some help. They can recognize the customer by its identifiant. (e.g. hotlines)</p></li>
+<li><p>Communities : Companies set up a platform where all of the customers can talk together and help themselves. It is also a mean for the company to better understand customers. (e.g. web forums)</p></li>
+<li><p>Co-creation : It consists in allowing customer to participate to the creation or evolution of products. (e.g. Youtube : Customers can create some content)</p></li>
+</ul>
+
+
+<h2>Revenue Streams (RS)</h2>
+
+<p>This describes the money generated by the activity of the company. Most of the time, this money is earned thanks to customer payments. There are several ways to generate money :</p>
+
+<ul>
+<li><p>Asset sale : Customer buys a physical product. Most common way to earn money.</p></li>
+<li><p>Usage fee : Customer pays for using a service provided by the company. Customer pays in propotion to its use (e.g. Telecom operators)</p></li>
+<li><p>Subscription fee : Customer pays a flat fee for unlimited access to the service (e.g. Gym Clubs)</p></li>
+<li><p>Lending/Renting : temporarily granting someone the possibility to use a certain asset. (e.g. Video On Demand)</p></li>
+<li><p>Licensing : selling the permission for customers to use a protected intellectual property. (e.g. Microsoft Office)</p></li>
+<li><p>Brokerage fees :receiving money from being an intermediate between two parties. Money is taken a percentage of the value of each sale between those two parties. (e.g. banks with credit cards, real estate agents)</p></li>
+<li><p>Advertising : Company receives money for advertising the product of another company (usualy media companies who have a considerable visibility)</p></li>
+</ul>
+
+
+<h2>Key Resources (KS) :</h2>
+
+<p> This block lists the assets which are necessary to make the business work. We can distinguish four types of resources :</p>
+
+<ul>
+<li><p> Physical : manufacturing facilities, buildings, vehicles, machines, feedstocks.</p></li>
+<li><p> Financial : cash, credits, stock options&hellip;</p></li>
+<li><p> Intellectual : proprietary knowledge (software, patents), reputation of a brand gained over time.</p></li>
+<li><p> Human : finding people with the skills needed to run the business</p></li>
+</ul>
+
+
+<h2>Key Activities (KA)</h2>
+
+<p>It describes the major activities the business is going to perform in order to be successful. Its aim is to create Value Proposition.</p>
+
+<ul>
+<li><p>Production : It consists in conceiving, creating and delivering a product to customers.</p></li>
+<li><p>Problem solving : Trying to solve customer problems the better way possible. Offering customer new ideas (e.g. alternative medicine)</p></li>
+<li><p>Platform/Network : It mainly consists in maintaining the platform functionnal and constantly making it evolve. (e.g. eBay&rsquo;s website, Visa&rsquo;s credi card system)</p></li>
+</ul>
+
+
+<h2>Key Partnerships (KP)</h2>
+
+<p>It describes the partners of the business which allows it to work smoohtly. We can distinguish 3 types of motivations for having partners :</p>
+
+<ul>
+<li><p>Resources optimization : It mainly consists in sharing resources and infrastructures between two or more businesses on order to reduce costs.</p></li>
+<li><p>Reduction of risk and uncertainty : Thoses partnerships aim to make the market evolve in a certain way in order to keep control of it. Some competitive business can be allies on a specific projet. (e.g. the creation of Blu-Ray Discs)</p></li>
+<li><p>Acquisition of particular resources and activities : It consists in relying on other companies and design a business which cannot be sufficient to itself. (examples : mobile phone manufacturers need partners who develop operating systems for their phones)</p></li>
+</ul>
+
+
+<h2>Cost Structure (CS)</h2>
+
+<p>This represents all the costs necessary to make the business work. The two broad classes of Cost Structures are the following :</p>
+
+<ul>
+<li>Cost-Driven : Those kind of structures focus on minimizing costs wherever possible. It is possible by looking for low price Value Proposition, or automating the activities as much as possible for example.</li>
+<li>Value-Driven : Those kind of structure focus on offering the most Value Proposition possible. Costs are not a preoccupation to those organization. High Value Proposition sells should offset the costs.</li>
+</ul>
+
+
+<p>Noteworthy characteristics about Cost Structures can be the following :</p>
+
+<ul>
+<li><p>Fixed Costs : Costs are independant of the amount of products or services produced. (most notable example is manufacturing facilities)</p></li>
+<li><p>Variable Costs : Costs are dependant of the amount of products or services produced. (most common example is a large amount of feedstocks is needed to built a large amount of products)</p></li>
+<li><p>Economies of scale : It describes some costs advantages the company enjoys as its output grows. (for example, if the company makes a huge command to a processor producer in order to assemble a computer, they can benefit of a discount for this command)</p></li>
+<li><p>Economies of scope : It refers to some costs advantages the company enjoys as its scope of operations grows. (for example, if the company sells several types of products, it can use the same Distribution Channels to deliver them. So there is nothing more to spend in terms of Distribution Channels to introduce this new product)</p></li>
+</ul>
+
+]]></content>
+  </entry>
   
 </feed>

@@ -1,0 +1,290 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Outils utilisés - A work experience @ Blackbird</title>
+  <meta name="author" content="Zoz">
+
+  
+  <meta name="description" content="Test-Driven Development (TDD) est une méthode dite &ldquo;agile&rdquo; qui consiste à écrire les test avant le code. Des tests sont écrits puis &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://Zozard.github.io/blog/2013/08/20/outils-utilises/">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="A work experience @ Blackbird" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-43051629-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">A work experience @ Blackbird</a></h1>
+  
+    <h2>Summary of my activities during my stay at Blackbird</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:Zozard.github.io" />
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Outils Utilisés</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-20T17:35:00+02:00" pubdate data-updated="true">Aug 20<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>Test-Driven Development (TDD) est une méthode dite &ldquo;agile&rdquo; qui consiste à écrire les test avant le code. Des tests sont écrits puis ensuite on écrit juste assez de code pour satisfaire ces test (pas plus).</p>
+
+<p>Utiliser du TDD est un moyen de fixer le besoin et les objectifs du code. Il peut être vu comme une extention du cahier des charges, afin de ne pas s&#8217;éloigner du but précis du développement. C&#8217;est une technique de programmation qui produit du code propre et assurément fonctionnel.</p>
+
+<p>Les étapes du Test-Driven Development sont les suivantes :</p>
+
+<p style="text-align:center;"><img src="http://www.sapdecouverte.fr/wp-content/uploads/2013/06/fig3.bmp" title="Etapes du TDD" alt="" /></p>
+
+<ul>
+<li>On ajoute un test qui correspond aux spécifications.</li>
+<li>Lorsque ce test est exécuté, il échoue puisqu&#8217;il n&#8217;y a pas de code.</li>
+<li>On ajoute le code en question.</li>
+<li>Le test fonctionne.</li>
+<li>On remanie le code pour le rendre plus propre, plus clair.</li>
+<li>On vérifie que le test fonctionne toujours.</li>
+</ul>
+
+
+<p>Chaque fois que le code doit changer, les tests devront donc être adaptés en conséquence. TDD est ce qu&#8217;on appelle une méthode de développement agile*.</p>
+
+<h2>Rspec</h2>
+
+<p>L&#8217;outil permettant d&#8217;écrire les spécifications utilisé avec le langage Ruby est Rspec. Voici un example de code Rspec :</p>
+
+<p style="text-align:center;"><img src="http://zozine.iiens.net/rspec.png" title="Extrait de code RSpec" alt="" /></p>
+
+<p>Le mot-clé &ldquo;MovieList&rdquo;, en vert désigne la classe à décrire. On indique que l&#8217;on va décrire le comportement de cette classe.</p>
+
+<p>Le texte écrit en rouge est indicatif. Il est écrit par le programmeur et a pour but d&#8217;expliquer littéralement le comportement du module qu&#8217;on décrit.</p>
+
+<p>Les lignes 4 et 5 correspondent à du code Ruby. C&#8217;est le comportement qu&#8217;est censé adopter notre module. Ici, on souhaite simplement que l&#8217;objet &ldquo;MovieList&rdquo; soit vide lorsqu&#8217;il est créé.</p>
+
+<h1>Ruby on Rails</h1>
+
+<h2>Ruby</h2>
+
+<p>Ruby est un langage de scripts orienté objet. On dit que Ruby est fortement orienté objet car toute donnée est un objet, toute fonction est une méthode d&#8217;un objet et toute variable fait référence à un objet. (Ainsi, la chaine de caractère &ldquo;Bonjour&rdquo; est un objet qui a des méthodes comme downcase. &ldquo;Bonjour&rdquo;.downcase renvoit l&#8217;objet &ldquo;BONJOUR&rdquo;)</p>
+
+<p style="text-align:center;"><img src="http://zozine.iiens.net/ruby.png" title="bonjour" alt="" /></p>
+
+<p>Ruby essaie d&#8217;offrir le plus de flexibilité et d&#8217;aisance d&#8217;utilisation pour le programmeur. Certains aspects du langage peuvent être modifiées durant son execution : si le programmeur le souhaite, il peut modifier ou réécrire complètement une méthode. De plus, la syntaxe et l&#8217;appellation des méthodes ont été pensées de façon à créer un langage clair et simple à lire, se rapprochant de l&#8217;anglais au maximum.</p>
+
+<h2>Rails</h2>
+
+<p>Rails est un framework* web écrit en Ruby. Rails suit la convention MVC* : Modèle-Vue-Contrôleur. Une structure de fichier (qu&#8217;on appelle un namespacing) est imposée au programmeur pour que son travail puisse se dérouler correctement.</p>
+
+<p>La particularité de Rails réside dans deux règles fondamentales :</p>
+
+<p><strong>DRY : Don&rsquo;t Repeat Yourself.</strong></p>
+
+<p>Un morceau de code écrit à un endroit et ayant une fonctionnalité bien précise ne doit pas être réécrit autre part. Il faut réduire au maximum la redonddance du code. Cela a pour but d&#8217;améliorer la clareté et la simplicité du code. Le découpage du code en MVC permet d&#8217;appliquer ce principe dans de bonnes conditions.</p>
+
+<p><strong>Convention over Configuration.</strong></p>
+
+<p>Rails propose de nombreux comportements par défaut lors de la création de certaines entités. Si ces conventions de nommage sont connues par le programmeur, cela offre de nombreux outils qui permettent de gagner du temps et de l&#8217;aisance de la programmation.</p>
+
+<p>L&#8217;exemple le plus simple est celui des modèles. Si un modèle &ldquo;Jeu&rdquo; est créé, une table &ldquo;jeux&rdquo; sera automatiquement créée dans la base de donnée et un ensemble de fonctions pré-définies permettra au modèle d&#8217;interagir avec la table de la base de données. (le pluriel de plusieurs langues est géré par Rails). Le programmeur peut choisir d&#8217;utiliser ces conventions ou bien de redéfinir la base de données.</p>
+
+<h2>Glossaire</h2>
+
+<p><strong>Test Unitaire:</strong></p>
+
+<p>Un test unitaire a pour but de vérifier le bon fonctionnement d&#8217;une partie du programme (qui peut être appelée &ldquo;unité&rdquo;). Les tests se basent généralement sur la vérification de l&#8217;état de certaines variables ou bien de ce qui s&#8217;affiche sur la sortie. On vérifie que cela correspond bien aux attentes données par la spécification.</p>
+
+<p><strong>Framework :</strong>
+Un framework peut être vu comme une boîte à outils. C&#8217;est un ensemble de composants qui permettent de créer les grandes lignes d&#8217;un programme.</p>
+
+<p><strong>MVC:</strong>
+C&#8217;est une convention d&#8217;organisation des différentes parties d&#8217;un programme interactif lors de son développement. On distingue trois couches nettement séparées :
+&ndash; Le Modèle :  La façon dont les données sont représentées et mémorisées.
+&ndash; La Vue : L&#8217;interface destinées à l&#8217;utilisateur final du programme
+&ndash; Le Contrôleur : Il prend en charge les évènements reçus sur la vue et répercute les effets attendus sur le modèle.</p>
+
+<p><strong>Méthodologie agile:</strong>
+C&#8217;est un ensemble de méthodes de gestion de projets (le plus souvent informatiques). Elles fonctionnent sur la base de l&#8217;incrémental (on s&#8217;occupe de différentes tâches une par une, par ordre de priorité) et de l&#8217;itératif (le projet est vu dans son intégralité et chaque itération apporte ses améliorations). De nombreuses phases de contrôle et d&#8217;échanges avec le client vont ponctuer le développement du projet.</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Zoz</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-08-20T17:35:00+02:00" pubdate data-updated="true">Aug 20<span>th</span>, 2013</time>
+      
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://Zozard.github.io/blog/2013/08/20/outils-utilises/" data-via="" data-counturl="http://Zozard.github.io/blog/2013/08/20/outils-utilises/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/08/20/an-introduction-to-business-model-canvas/" title="Previous Post: An introduction to business model canvas">&laquo; An introduction to business model canvas</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2013/08/21/my-projects-mvp/" title="Next Post: my project's mvp">my project's mvp &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2013/08/21/my-projects-mvp/">my project's mvp</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/20/outils-utilises/">Outils utilisés</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/08/20/an-introduction-to-business-model-canvas/">An introduction to business model canvas</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2013 - Zoz -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a>. Design by <a href="http://octopressthemes.com">Octopress Themes</a>.</span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
